@@ -1,0 +1,15 @@
+# Ignore compiled Python files
+__pycache__/
+*.pyc
+
+# Ignore the Django media directory
+media/
+
+# Ignore the Django static directory
+staticfiles/
+
+# Ignore logs
+logs/
+
+# Ignore virtual environment file
+pst/
