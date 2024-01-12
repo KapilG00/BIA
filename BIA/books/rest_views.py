@@ -21,11 +21,11 @@ class BookView(APIView):
             response_object = Response(resp, status=status.HTTP_200_OK)
         except Exception as e:
             resp = {
-                'status_code': status.HTTP_404_NOT_FOUND,
+                'status_code': status.HTTP_204_NO_CONTENT,
                 'status_message': str(e),
                 'results': {}
             }
-            response_object = Response(resp, status=status.HTTP_404_NOT_FOUND)
+            response_object = Response(resp, status=status.HTTP_204_NO_CONTENT)
 
         return response_object
 
